@@ -162,7 +162,7 @@ def test_custom_text(nlp):
     print("\n TESTING ANOTHER TEST SAMPLE")
     print("=" * 30)
     
-    # You can modify this text
+    # Custom Text
     custom_text = "Rohit Sharma, a cricketing genius known for his effortless elegance, destructive batting, and record-breaking centuries. His leadership, poise, and consistency have solidified him as one of the game’s finest, inspiring millions with each powerful stroke and calculated innings."
     
     print(f"Text: {custom_text}")
@@ -177,28 +177,26 @@ def test_custom_text(nlp):
 
 def main():
     
-    # Step 1: Install requirements (if needed)
     install_requirements()
     
-    # Step 2: Load spaCy model
+    #Loading spaCy model
     nlp = load_spacy_model()
     
-    # Step 3: Get sample texts
+    #Get sample texts
     sample_texts = get_sample_texts()
     print(f"\n {len(sample_texts)} sample texts")
-    
-    # Step 4: Analyze texts
+
     results = analyze_texts(nlp, sample_texts)
     
     if results:
-        # Step 5: Create analysis report
+        #Create analysis report
         df, entity_counts = create_analysis_report(results)
         
-        # Step 6: Save results
+        #Save results
         if df is not None:
             save_results(df)
         
-        # Step 7: Test custom text
+        #Test custom text
         test_custom_text(nlp)
         
         print("\n PROJECT COMPLETED SUCCESSFULLY!")
