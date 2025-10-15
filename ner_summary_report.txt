@@ -1,0 +1,19 @@
+NAMED ENTITY RECOGNITION (NER) ANALYSIS REPORT
+=============================================
+
+Analysis Date: 2025-10-15 22:17:50
+
+OVERVIEW:
+- Total texts analyzed: 8
+- Total entities extracted: 29
+- Unique entities found: 29
+- Different entity types: 7
+
+ENTITY TYPE BREAKDOWN:
+- GPE: 11 entities (37.9%)
+- PERSON: 9 entities (31.0%)
+- ORG: 5 entities (17.2%)
+- ORDINAL: 1 entities (3.4%)
+- DATE: 1 entities (3.4%)
+- LOC: 1 entities (3.4%)
+- FAC: 1 entities (3.4%)
